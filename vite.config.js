@@ -6,4 +6,5 @@ export default defineConfig({
   // Dynamic base path: set automatically by GitHub Actions deploy workflow.
   // Falls back to repo name for local development.
   base: process.env.VITE_BASE_PATH || '/',
+
 });
