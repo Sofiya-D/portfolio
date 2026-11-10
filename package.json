@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^3.5.0",
     "axios": "^1.7.2",
     "framer-motion": "^11.2.11",
     "hamburger-react": "^2.5.1",
