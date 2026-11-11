@@ -23,7 +23,7 @@ function Header() {
         <ul>
           <li>
             <Link to="/" onClick={handleLinkClick}>
-              Home
+              Portfolio
             </Link>
           </li>
           <li>

@@ -17,7 +17,7 @@ const images = Object.values(profileModules);
 const profileImage = images.length > 0 ? images[0] : null;
 
 function About() {
-  const handleClick = () => {
+  const handleClick = () => { // TODO Sofiya : change this to a resume view opening
     const email = data.AboutEmail;
     const subject = data.AboutEmailSubject;
     const emailLink = document.createElement("a");
@@ -42,9 +42,10 @@ function About() {
           <h1>{data.AboutHeading}</h1>
           <p>{data.AboutTextParagraph1}</p>
           <p>{data.AboutTextParagraph2}</p>
-          <button onClick={handleClick} className={AboutCSS.contactButton}>
+          {/* // TODO Sofiya : change this to a resume view opening */}
+          {/* <button onClick={handleClick} className={AboutCSS.contactButton}>
             {data.AboutButtonText}
-          </button>
+          </button> */}
         </div>
       </div>
       <Footer />
