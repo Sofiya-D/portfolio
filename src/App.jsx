@@ -23,7 +23,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={import.meta.env.BASE_URL.replace(/\/$/, '')}> 
+        {/* The basename allows github.io/portfolio/ to work properly instead of strictly requiring home to be at github.io/ . */}
+        {/* The "replace" bit is to remove trailing slashes that can mess with basename's expected input. */}
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<Home />} />
