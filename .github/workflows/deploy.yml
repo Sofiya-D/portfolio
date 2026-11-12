@@ -40,7 +40,10 @@ jobs:
           fi
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html 
+        # ' remplacing 404.html by index.html allows handling nested pages (eg: github.io/portfolio/about/) '
         env:
           VITE_BASE_PATH: ${{ steps.base.outputs.path }} # '/portfolio/'
 
